@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: ticfont;
+  src: url(/Tic\ Tac\ Toe/src/assets/font/SpaceMission-rgyw9.otf) format("otf");
+}
+html {
+  font-family: ticfont;
+}
+.turn {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 2% 0;
+}
+#root {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainBoard {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+}
+.house {
+  width: 33%;
+  height: 38%; /* 32:18, i.e. 16:9 */
+  z-index: 100;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#house-1 {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#house-2 {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#house-3 {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#house-4 {
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#house-5 {
+  border: 1px solid #000;
+}
+#house-6 {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#house-7 {
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+}
+#house-8 {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+}
+#house-9 {
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.xo {
+  font-size: 24px;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
